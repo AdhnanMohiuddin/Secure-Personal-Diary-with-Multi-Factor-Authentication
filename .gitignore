@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Uploaded files (keep folder but ignore contents)
+uploads/*
+!uploads/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# System / IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

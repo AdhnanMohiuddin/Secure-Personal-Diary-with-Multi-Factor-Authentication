@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Entry</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-4">
+    <h1 class="mb-4">Edit Entry</h1>
+    
+    <div class="card mb-4">
+      <div class="card-header">
+        <h2>Edit Your Diary Entry</h2>
+      </div>
+      <form class="card-body" action="/edit-entry/<%= entry._id %>" method="POST">
+        <div class="form-group">
+          <label for="content">Entry Content:</label>
+          <textarea class="form-control" id="content" name="content" rows="4" required><%= entry.content %></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Update Entry</button>
+      </form>
+    </div>
+
+    <form action="/" method="GET">
+      <button type="submit" class="btn btn-secondary">Back to Diary</button>
+    </form>
+  </div>
+</body>
+</html>
